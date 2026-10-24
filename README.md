@@ -23,12 +23,15 @@
 
 ## 当前状态
 
-- [ ] 方案设计
-- [ ] 材料采购
+- [x] 方案设计（M1 冻结，见 design/SOLUTION.md）
+- [ ] 材料采购（大件已下单，缺件包约 ¥75 待购）
 - [ ] 组装
 - [ ] 软件训练
 - [ ] 联调跑通
 
 ## 参考资料
 
-- （待补充：原项目仓库链接、复刻对象说明）
+- 原项目：Pollen Robotics Microduck（官方整机 $399）
+- 复刻主线仓库：kissqy/Microduck-kissqy（本地克隆：/Users/lisq/project/jiqiren/Microduck-kissqy）
+- 复刻教程（本地整理版）：/Users/lisq/project/jiqiren/MicroDuck复刻教程.md（2026-10-22 版）
+- 3D 打印件（缝合怪版，备用）：仓库 hardware/3d-print-frankenduck/（36 STL）
