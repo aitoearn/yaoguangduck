@@ -81,6 +81,25 @@ background:#1F1D1B;color:#fff;border-radius:16px;padding:16px 24px;font-size:18p
 </body></html>"""
 
 
+def mask_digits(s: str, keep_head=6, keep_tail=4) -> str:
+    """对长数字串打码：保留头尾，中间用 * 替换。非纯数字（如团购/店铺名）原样返回。"""
+    if not s.isdigit() or len(s) <= keep_head + keep_tail:
+        return s
+    return s[:keep_head] + "*" * (len(s) - keep_head - keep_tail) + s[-keep_tail:]
+
+
+def mask_tracking(s: str) -> str:
+    """物流单号打码：保留快递公司名与单号头尾。"""
+    parts = s.split(" ")
+    out = []
+    for p in parts:
+        if len(p) >= 8 and any(c.isdigit() for c in p):
+            out.append(p[:4] + "*" * max(0, len(p) - 8) + p[-4:])
+        else:
+            out.append(p)
+    return " ".join(out)
+
+
 def row_html(r):
     date, oid, status, shop, item, spec, qty, amt, logi = r
     flag = "🟢" if status == "已付款" else ("📦" if status == "已发货" else "🚚")
@@ -88,7 +107,7 @@ def row_html(r):
         "<tr><td>"
         f'<div class="name">{item}</div>'
         f'<div class="meta">{flag} {status} · <b>{shop}</b> · {spec} · ×{qty}<br>'
-        f'订单 {oid} · 物流 {logi} · 下单 {date}</div>'
+        f'订单 {mask_digits(oid)} · 物流 {mask_tracking(logi)} · 下单 {date}</div>'
         "</td>"
         f'<td class="amt">¥{amt}</td></tr>'
     )
