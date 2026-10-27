@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1080px; height:1440px; overflow:hidden;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:#1F1D1B; color:#F7F3EE; padding:76px 72px;
+    display:flex; flex-direction:column;
+  }
+  .head { display:flex; align-items:flex-end; justify-content:space-between; }
+  h1 { font-size:66px; font-weight:800; line-height:1.22; letter-spacing:-1px; }
+  h1 em { font-style:normal; color:#FFB05C; }
+  .tag { font-size:24px; color:#857D74; letter-spacing:2px; padding-bottom:12px; }
+  .hint { font-size:26px; color:#948B82; margin-top:20px; }
+
+  .card {
+    background:#2A2724; border-radius:28px; padding:36px 40px; margin-top:26px;
+    display:flex; gap:28px; align-items:flex-start;
+  }
+  .card .num {
+    font-size:44px; font-weight:800; color:#FFB05C; line-height:1; flex:none; width:66px;
+    letter-spacing:-1px;
+  }
+  .card h3 { font-size:38px; font-weight:700; letter-spacing:-0.5px; }
+  .card p { font-size:27px; line-height:1.62; color:#BDB4AA; margin-top:12px; }
+  .card p b { color:#FFD8A8; font-weight:700; }
+
+  .save {
+    margin-top:auto; background:#FFB05C; color:#1F1D1B; border-radius:28px;
+    padding:34px 42px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .save .l { font-size:30px; font-weight:700; letter-spacing:1px; }
+  .save .r { font-size:56px; font-weight:800; letter-spacing:-1px; }
+  .foot { margin-top:26px; font-size:23px; color:#7C746B; letter-spacing:1px; display:flex; justify-content:space-between;}
+</style>
+</head>
+<body>
+  <div class="head">
+    <h1>新手最容易<br><em>白花的三个钱</em></h1>
+    <div class="tag">Part 3 / 3</div>
+  </div>
+  <div class="hint">都是清单里没写、社区踩过才知道的</div>
+
+  <div class="card">
+    <div class="num">01</div>
+    <div>
+      <h3>DIY 工具链：省下 500 元</h3>
+      <p>官方工具清单里有钢网、锡膏、加热台、热风枪——那是<b>自己打 PCB</b> 才需要的一整套回流工艺。直接买作者的<b>成品扩展板</b>，这一串全部跳过，也省掉烧录固件的折腾。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">02</div>
+    <div>
+      <h3>电源线：别用杜邦线凑</h3>
+      <p>电池到舵机总线的干线要 <b>18/20AWG 硅胶线</b>。15 颗舵机同时发力时电流很大，细线压降会直接让主控重启——表现出来的现象是<b>「一动就断电」</b>，很多人以为是电池坏了。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">03</div>
+    <div>
+      <h3>一颗 3 块钱的电容</h3>
+      <p>总进电口必须并一颗 <b>1000µF/16V</b> 电解电容，缓冲舵机全功率的瞬时冲击。这是社区文档里的硬要求，也是最便宜的保险——<b>有极性，别接反</b>。</p>
+    </div>
+  </div>
+
+  <div class="save">
+    <div class="l">不买工具链直接省下</div>
+    <div class="r">约 ¥500</div>
+  </div>
+  <div class="foot"><span>买成品 ≠ 成品，第一次装配仍要逐关节标定</span><span>2026.10</span></div>
+</body>
+</html>

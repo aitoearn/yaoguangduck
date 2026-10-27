@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1080px; height:1440px; overflow:hidden;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:#FFFFFF; color:#1F1D1B; padding:60px 72px;
+    display:flex; flex-direction:column;
+  }
+  .head { display:flex; align-items:flex-end; justify-content:space-between; }
+  h1 { font-size:56px; font-weight:800; letter-spacing:-1px; line-height:1.2; }
+  h1 em { font-style:normal; color:#E8722C; }
+  .tag { font-size:24px; color:#9A9188; letter-spacing:2px; padding-bottom:10px; }
+  .hint { font-size:24px; color:#9A9188; margin-top:14px; letter-spacing:1px; }
+
+  .list { margin-top:30px; }
+  .item {
+    display:flex; align-items:center; padding:14px 4px;
+    border-bottom:1.5px solid #F2EDE7;
+  }
+  .dot { width:14px; height:14px; border-radius:50%; margin-right:22px; flex:none; }
+  .name { font-size:30px; font-weight:600; }
+  .spec { font-size:21px; color:#A79E94; margin-top:5px; }
+  .price { margin-left:auto; font-size:32px; font-weight:800; letter-spacing:-1px; font-variant-numeric:tabular-nums; }
+  .price i { font-size:22px; font-style:normal; font-weight:600; color:#A79E94; margin-left:4px; }
+
+  .sum {
+    margin-top:auto; background:#1F1D1B; color:#FFFFFF; border-radius:26px;
+    padding:28px 40px; display:flex; align-items:center; justify-content:space-between; flex:none;
+  }
+  .sum .l { font-size:24px; letter-spacing:2px; color:#C9C2BA; }
+  .sum .r { font-size:54px; font-weight:800; letter-spacing:-2px; }
+  .sum .r b { color:#FFC078; }
+  .foot { margin-top:18px; font-size:21px; color:#A79E94; letter-spacing:1px; text-align:right; flex:none; }
+</style>
+</head>
+<body>
+  <div class="head">
+    <h1>采购明细<br><em>照着买就行</em></h1>
+    <div class="tag">Part 2 / 3</div>
+  </div>
+  <div class="hint">价格为实付口径，含备件；工具类可长期复用</div>
+
+  <div class="list">
+    <div class="item">
+      <span class="dot" style="background:#E8722C"></span>
+      <div><div class="name">串口总线舵机 HD-1910</div><div class="spec">15 颗 · 团购 95 元/个（零售 123 别买）</div></div>
+      <div class="price">1425<i>元</i></div>
+    </div>
+    <div class="item">
+      <span class="dot" style="background:#E8722C"></span>
+      <div><div class="name">主控 Radxa ZERO 3W</div><div class="spec">2GB / 无 eMMC / 带排针 + 摄像头</div></div>
+      <div class="price">564<i>元</i></div>
+    </div>
+    <div class="item">
+      <span class="dot" style="background:#E8722C"></span>
+      <div><div class="name">HAT + 躯干 IMU 扩展板</div><div class="spec">社区作者成品 · 固件已烧好</div></div>
+      <div class="price">218<i>元</i></div>
+    </div>
+    <div class="item">
+      <span class="dot" style="background:#8C7B6B"></span>
+      <div><div class="name">3D 打印外壳（橙白）</div><div class="spec">精修版成品 · 免自己打印调试</div></div>
+      <div class="price">159<i>元</i></div>
+    </div>
+    <div class="item">
+      <span class="dot" style="background:#8C7B6B"></span>
+      <div><div class="name">存储 TF 卡 64G ×2</div><div class="spec">一张系统一张备份 · 无 eMMC 只能靠卡启动</div></div>
+      <div class="price">195<i>元</i></div>
+    </div>
+    <div class="item">
+      <span class="dot" style="background:#8C7B6B"></span>
+      <div><div class="name">电池 NP-F550 ×2 + 双充</div><div class="spec">2S 7.4V · 直供舵机总线</div></div>
+      <div class="price">82<i>元</i></div>
+    </div>
+    <div class="item">
+      <span class="dot" style="background:#8C7B6B"></span>
+      <div><div class="name">传感器与视觉</div><div class="spec">ToF 测距 49.5 · IMX219 160° 广角 60</div></div>
+      <div class="price">110<i>元</i></div>
+    </div>
+    <div class="item">
+      <span class="dot" style="background:#8C7B6B"></span>
+      <div><div class="name">轴承 / 螺丝 / 线材 / 接插件</div><div class="spec">6700×5、ET2216×12、M2 自攻六规格、舵机线 60 根</div></div>
+      <div class="price">209<i>元</i></div>
+    </div>
+    <div class="item">
+      <span class="dot" style="background:#4C9A7A"></span>
+      <div><div class="name">工具（可长期复用）</div><div class="spec">焊台 104 · 万用表 120 · 调试板 45 · 杂项</div></div>
+      <div class="price">310<i>元</i></div>
+    </div>
+  </div>
+
+  <div class="sum">
+    <div class="l">合计 / TOTAL</div>
+    <div class="r">¥<b>3263</b></div>
+  </div>
+  <div class="foot">待补小件约 30~50 元：电容 1000µF、保险、取电扣板、18AWG 线</div>
+</body>
+</html>
