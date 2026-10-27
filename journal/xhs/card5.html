@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1080px; height:1440px; overflow:hidden;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:#FFFFFF; color:#1F1D1B; padding:48px 52px 36px;
+    display:flex; flex-direction:column;
+  }
+  .head { display:flex; align-items:flex-start; justify-content:space-between; }
+  h1 { font-size:50px; font-weight:800; letter-spacing:-1px; line-height:1.2; }
+  h1 em { font-style:normal; color:#E8722C; }
+  .hint { font-size:22px; color:#9A9188; margin-top:10px; }
+  .tag { font-size:21px; color:#B3A99E; letter-spacing:2px; padding-top:8px; }
+
+  .panel { margin-top:22px; border:1.5px solid #F0EAE2; border-radius:22px; overflow:hidden; flex:none; }
+  .row { display:flex; align-items:center; gap:16px; padding:11px 22px; border-bottom:1.5px solid #F5F0E9; }
+  .row:last-child { border-bottom:none; }
+  .row:nth-child(even) { background:#FDFBF7; }
+  .no { font-size:19px; font-weight:800; color:#DAD0C3; width:32px; flex:none; }
+  .mid { flex:1; min-width:0; }
+  .pname { font-size:23px; font-weight:700; letter-spacing:-.2px; }
+  .meta { font-size:18px; color:#A0968C; margin-top:4px; }
+  .meta b { color:#C4763A; font-weight:600; }
+  .price { font-size:26px; font-weight:800; flex:none; font-variant-numeric:tabular-nums; letter-spacing:-.5px; }
+
+  .tips { margin-top:14px; background:#FFF7EC; border-radius:20px; padding:18px 26px; flex:none; }
+  .tips .t { font-size:21px; font-weight:800; color:#C4763A; letter-spacing:1px; }
+  .tips p { font-size:20px; line-height:1.6; color:#6F665E; margin-top:8px; }
+
+  .sum { margin-top:auto; display:flex; align-items:center; justify-content:space-between;
+    background:#1F1D1B; color:#fff; border-radius:22px; padding:20px 30px; flex:none; }
+  .sum .l { font-size:22px; color:#C9C2BA; letter-spacing:1px; }
+  .sum .r { font-size:44px; font-weight:800; letter-spacing:-1.5px; }
+  .sum .r b { color:#FFC078; }
+  .foot { margin-top:14px; font-size:19px; color:#A79E94; display:flex; justify-content:space-between; flex:none; }
+</style>
+</head>
+<body>
+  <div class="head">
+    <div>
+      <h1>小件 · 耗材 · 工具<br><em>最容易漏的那些</em></h1>
+      <div class="hint">单价低但缺一个就装不下去，建议一次买齐</div>
+    </div>
+    <div class="tag">Part 3 / 4</div>
+  </div>
+
+  <div class="panel">
+    <div class="row">
+      <div class="no">09</div>
+      <div class="mid"><div class="pname">薄壁轴承 6700×5 + ET2216×12</div>
+        <div class="meta">优可吉轴承销售店 · 搜「<b>6700开式 10*15*3</b>」「<b>ET2216 16*22*4</b>」</div></div>
+      <div class="price">46</div>
+    </div>
+    <div class="row">
+      <div class="no">10</div>
+      <div class="mid"><div class="pname">M2 自攻螺丝 六种规格（各 200 只）</div>
+        <div class="meta">固万基官方旗舰店 · 搜「<b>M2*4 M2*5 M2*6 M2*8 M2*12 M2.6*8</b>」</div></div>
+      <div class="price">13.5</div>
+    </div>
+    <div class="row">
+      <div class="no">11</div>
+      <div class="mid"><div class="pname">AMP2.0-3P 舵机线 100/200mm 各 30 根</div>
+        <div class="meta">永茂电子 · 搜「<b>AMP2.0 间距2.0 microduck 舵机线</b>」· 含运费 8</div></div>
+      <div class="price">113</div>
+    </div>
+    <div class="row">
+      <div class="no">12</div>
+      <div class="mid"><div class="pname">EH2.5MM 胶壳 2P/3P 各 50 + 端子 100</div>
+        <div class="meta">启色数码旗舰店 · 搜「<b>EH2.5MM 胶壳 端子</b>」</div></div>
+      <div class="price">8.5</div>
+    </div>
+    <div class="row">
+      <div class="no">13</div>
+      <div class="mid"><div class="pname">SH1.0-4P 转杜邦母线 0.2m ×5</div>
+        <div class="meta">信容芯旗舰店 · 搜「<b>SH1.0转杜邦母 4P</b>」</div></div>
+      <div class="price">4.8</div>
+    </div>
+    <div class="row">
+      <div class="no">14</div>
+      <div class="mid"><div class="pname">22AWG 硅胶排线 3芯 1m ×3 + 硅胶线 2m</div>
+        <div class="meta">萨牛旗舰店 / 渡竹旗舰店 · 搜「<b>3芯 22AWG 硅胶排线</b>」</div></div>
+      <div class="price">16</div>
+    </div>
+    <div class="row">
+      <div class="no">15</div>
+      <div class="mid"><div class="pname">热缩管套装 164 片彩色</div>
+        <div class="meta">圣佰路旗舰店 · 搜「<b>热缩管 164片 2倍收缩</b>」</div></div>
+      <div class="price">3</div>
+    </div>
+    <div class="row">
+      <div class="no">16</div>
+      <div class="mid"><div class="pname">microSD 64G V10 ×2（系统 + 备份）</div>
+        <div class="meta">闪迪伯众专卖店 · 搜「<b>闪迪 64G TF卡 V10</b>」· 无 eMMC 必买</div></div>
+      <div class="price">195</div>
+    </div>
+    <div class="row">
+      <div class="no">17</div>
+      <div class="mid"><div class="pname">数字万用表 UT136B+</div>
+        <div class="meta">优利德自营 · 搜「<b>优利德 UT136B+ 特尖表笔</b>」· 验针序用</div></div>
+      <div class="price">120</div>
+    </div>
+    <div class="row">
+      <div class="no">18</div>
+      <div class="mid"><div class="pname">飞特 FE-URT2-C001 调试板 + 线材</div>
+        <div class="meta">飞特舵机工厂店 · 搜「<b>FE-URT2-C001</b>」· 给舵机写 ID</div></div>
+      <div class="price">45</div>
+    </div>
+    <div class="row">
+      <div class="no">19</div>
+      <div class="mid"><div class="pname">安立信 937A 数显恒温焊台（套餐二）</div>
+        <div class="meta">安立信旗舰店 · 搜「<b>安立信 937A 升级数显</b>」</div></div>
+      <div class="price">104</div>
+    </div>
+  </div>
+
+  <div class="tips">
+    <div class="t">⚠️ 还没买、装到最后才会用</div>
+    <p>电容 1000µF/16V（选 10×16）· 保险座 + 5A 快熔 · NP-F 取电扣板 · 18/20AWG 红黑硅胶线 —— 合计约 30~50 元</p>
+  </div>
+
+  <div class="sum">
+    <div class="l">小件与工具小计 / 11 项</div>
+    <div class="r"><b>¥703</b></div>
+  </div>
+  <div class="foot"><span>全部实付口径，含运费</span><span>合计 ¥3263</span></div>
+</body>
+</html>

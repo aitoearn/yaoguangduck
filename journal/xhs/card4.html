@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1080px; height:1440px; overflow:hidden;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:#FDF6EC; color:#1F1D1B; padding:56px 56px 44px;
+    display:flex; flex-direction:column;
+  }
+  .head { display:flex; align-items:flex-start; justify-content:space-between; }
+  h1 { font-size:54px; font-weight:800; letter-spacing:-1px; line-height:1.2; }
+  h1 em { font-style:normal; color:#E8722C; }
+  .hint { font-size:23px; color:#9A9188; margin-top:12px; letter-spacing:.5px; }
+  .tag { font-size:22px; color:#B3A99E; letter-spacing:2px; padding-top:10px; }
+
+  .panel {
+    margin-top:26px; background:#FFFFFF; border-radius:26px; overflow:hidden;
+    box-shadow:0 10px 34px rgba(180,140,90,.13); flex:none;
+  }
+  .row { display:flex; align-items:center; gap:20px; padding:19px 28px; border-bottom:1.5px solid #F5F0E9; }
+  .row:last-child { border-bottom:none; }
+  .row.hi { background:#FFF7EC; }
+  .no { font-size:22px; font-weight:800; color:#D8CDBF; width:38px; flex:none; font-variant-numeric:tabular-nums; }
+  .mid { min-width:0; flex:1; }
+  .pname { font-size:28px; font-weight:700; letter-spacing:-.3px; }
+  .meta { font-size:21px; color:#9A9188; margin-top:6px; }
+  .meta b { color:#C4763A; font-weight:600; }
+  .price { font-size:32px; font-weight:800; letter-spacing:-1px; flex:none; font-variant-numeric:tabular-nums; }
+  .price i { font-size:20px; font-style:normal; color:#A79E94; font-weight:600; margin-left:3px; }
+
+  .sum { margin-top:auto; display:flex; align-items:center; justify-content:space-between;
+    background:#1F1D1B; color:#fff; border-radius:24px; padding:24px 34px; flex:none; }
+  .sum .l { font-size:24px; color:#C9C2BA; letter-spacing:1px; }
+  .sum .r { font-size:48px; font-weight:800; letter-spacing:-1.5px; }
+  .sum .r b { color:#FFC078; }
+  .foot { margin-top:16px; font-size:20px; color:#A79E94; display:flex; justify-content:space-between; letter-spacing:.5px; flex:none; }
+</style>
+</head>
+<body>
+  <div class="head">
+    <div>
+      <h1>核心件清单<br><em>店铺 + 关键词直接搜</em></h1>
+      <div class="hint">价格为本人实付，含运费；团购价随批次浮动</div>
+    </div>
+    <div class="tag">Part 2 / 4</div>
+  </div>
+
+  <div class="panel">
+    <div class="row hi">
+      <div class="no">01</div>
+      <div class="mid">
+        <div class="pname">飞特 HD-1910 串口总线舵机</div>
+        <div class="meta">飞特舵机工厂店 · 搜「<b>飞特 HD-1910-C001</b>」· 团购 ¥95/个</div>
+      </div>
+      <div class="price">1425<i>元</i></div>
+    </div>
+    <div class="row hi">
+      <div class="no">02</div>
+      <div class="mid">
+        <div class="pname">Radxa ZERO 3W 主控 + 摄像头</div>
+        <div class="meta">HenryIPforever · 搜「<b>Radxa ZERO 3W 2G 无eMMC 带排针</b>」</div>
+      </div>
+      <div class="price">564<i>元</i></div>
+    </div>
+    <div class="row hi">
+      <div class="no">03</div>
+      <div class="mid">
+        <div class="pname">HAT 扩展板 + 躯干 IMU 板</div>
+        <div class="meta">kissqy 官方店 · 搜「<b>microduck 开源机器鸭 HAT IMU TO DXL</b>」· 119+99</div>
+      </div>
+      <div class="price">218<i>元</i></div>
+    </div>
+    <div class="row">
+      <div class="no">04</div>
+      <div class="mid">
+        <div class="pname">3D 打印外壳（B 款橙白）</div>
+        <div class="meta">yaoyanzhutb 的小店 · 搜「<b>Microduck 3D打印结构件</b>」· 精修版成品</div>
+      </div>
+      <div class="price">159<i>元</i></div>
+    </div>
+    <div class="row">
+      <div class="no">05</div>
+      <div class="mid">
+        <div class="pname">IMX219 160° 广角摄像头</div>
+        <div class="meta">树莓派零售商 · 搜「<b>IMX219 160度摄像头</b>」· 认准 8MP</div>
+      </div>
+      <div class="price">60<i>元</i></div>
+    </div>
+    <div class="row">
+      <div class="no">06</div>
+      <div class="mid">
+        <div class="pname">VL53L5X V2 ToF 测距模块</div>
+        <div class="meta">都会明武电子 · 搜「<b>VL53L5X V2 模块配盖片</b>」· 8×8 区域</div>
+      </div>
+      <div class="price">49.5<i>元</i></div>
+    </div>
+    <div class="row">
+      <div class="no">07</div>
+      <div class="mid">
+        <div class="pname">NP-F550 电池 ×2 + 双充</div>
+        <div class="meta">fb数码旗舰店 · 搜「<b>沣标 NP-F550 2电+标准双充</b>」· 别买 F970</div>
+      </div>
+      <div class="price">82<i>元</i></div>
+    </div>
+    <div class="row">
+      <div class="no">08</div>
+      <div class="mid">
+        <div class="pname">3525 腔体喇叭 4Ω 3W</div>
+        <div class="meta">优信电子 · 搜「<b>3525腔体 4Ω3W 喇叭</b>」· 带 1.25 端子</div>
+      </div>
+      <div class="price">2.8<i>元</i></div>
+    </div>
+  </div>
+
+  <div class="sum">
+    <div class="l">核心件小计 / 8 项</div>
+    <div class="r"><b>¥2560</b></div>
+  </div>
+  <div class="foot"><span>店铺名为淘宝店铺全名，直接搜店名更准</span><span>2026.10 实付</span></div>
+</body>
+</html>
